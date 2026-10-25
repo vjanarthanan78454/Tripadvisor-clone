@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, sans-serif;
+    color: black;
+    background-color: white;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 7%;
+    background-color: white;
+}
+.logo{
+    font-size: 30px;
+    color: gray;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img{
+     width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+
+nav a{
+    text-decoration: none;
+    color: black;
+    margin: 0 12px;
+    font-weight: bold;
+}
+
+nav a:hover{
+    color: green;
+}
+
+.signin{
+    background-color: #004f32;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.banner{
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.35),
+                        rgba(0, 0, 0, 0.35)),
+        url("https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?w=1600");
+
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 90px 8%;
+}
+
+.banner h2 {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+.banner p{
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+
+.search{
+    display: flex;
+    background-color: white;
+    padding: 8px;
+    border-radius: 40px;
+    max-width: 600px;
+}
+
+.search input{
+    flex: 1;
+    min-width: 0;
+    padding: 15px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    border-radius: 30px;
+}
+
+.search button{
+    padding: 15px 25px;
+    border: none;
+    border-radius: 30px;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+}
+.section{
+    padding: 35px 7%;
+}
+
+.section h2{
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+.section p{
+    color:yellowgreen;
+}
+ 
+.places{
+    display: flex;
+    gap: 18px;
+    margin-top: 22px;
+}
+
+.card{
+    flex: 1;
+    min-width: 0;
+    border: 1px solid whitesmoke;
+    border-radius: 10px;
+    overflow: hidden;
+    padding-bottom: 12px;
+}
+
+.card img{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+}
+
+.card h3 .card h4,.card p{
+    margin: 8px 10px 0;
+}
+
+.card h3{
+    font-size: 18px;
+}
+
+.card p{
+    font-size: 14px;
+    color: darkgreen;
+}
+
+.card .rating{
+    color: green;
+    font-size: 15px;
+}
+
+.hotels{
+    background-color: white;
+}
+
+#footer{
+    background-color: darkgreen;
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+    line-height: 2;
+}
+@media(max-width: 750px){
+    header{
+        flex-direction: column;
+        gap: 20px;
+    }
+    nav a{
+        margin: 0 5px;
+        font-size: 15px;
+    }
+
+    .banner{
+        padding: 65px 6%;
+    }
+    .banner h2{
+        font-size: 35px;
+    }
+    .places{
+        flex-direction: column;
+    }
+    .card img{
+        height: 220px;
+    }
+}
+
+
+
+
